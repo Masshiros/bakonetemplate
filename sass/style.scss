@@ -22,34 +22,105 @@
 
 
 // Variables
-:root{
+$primary-color: #444;
+$secondary : #fff;
+$green : #1bbc9b;
 
-}
+
 
 // Inherit
 body{
     font-family: Lato-Regular;
-    
+    color: $primary-color;   
 }
 html{
     font-size: 62.5%;
 }
 // HEADER
-
 // MENU
+.navbar{
+    padding: 2.0875rem 0;
+}
 .navbar-light {
-    & .navbar-nav{
-        & .nav-link{
-            color : #444;
-            font-size: 1.4rem;
-            &:hover{
-                color: #fff;
-                background-color: #1bbc9b;
+    .navbar-nav{
+        li{
+            .active{
+                .nav-link{
+                    color: $secondary;
+                    background-color: $green;
+                }
             }
+            // nav-link element in last li tag
+            &:last-child{
+                .nav-link{
+                    margin-right: 0;
+                }
+            }
+        }
+       
+        
+       
+        .nav-link{
+            color : $primary-color;
+            font-size: 1.4rem;
+            padding: 0 1.2rem;
+            margin-right: 0.7rem;
+            &:hover{
+                color: $secondary;             
+                background-color: $green;
+            }
+           
 
         }
     } 
     
 }
+//------------------------------HOME ---------------------------------
+.home{
+    padding: 0.71rem 8.2rem 0;
+    color: $secondary;
+    background-image: url('../images/images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+
+    h1{
+        font-family: Lato-Light;
+        font-size: 5.5rem;
+        margin-bottom: 2.9rem;
+        span{
+            font-family: Lato-Bold;
+        }
+    }
+    p{
+        font-family: Lato-Light;
+        font-size: 1.8rem;
+        margin: auto;
+        margin-bottom: 4.6rem;
+        max-width: 57.6rem;
+    }
+    button{
+        height: 3.7rem;
+        background: #1bbc9b;
+        color: $secondary;
+        font-family: Lato-Bold;
+        font-size: 1.3rem;
+        margin-bottom: 4.2rem;
+        border: none;
+        padding: 0 1.3rem;
+        letter-spacing: 0.3rem;
+
+    }
+    a{
+        img{
+            margin-bottom: 1.8rem;
+
+        }
+    }
+   
+}
+
+
+
+
 // MAIN
 
