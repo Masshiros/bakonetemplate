@@ -1,0 +1,55 @@
+// Define fonts
+@font-face {
+    font-family: Lato-Regular;
+    src: url(../fonts/fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: Lato-Italic;
+    src: url(../fonts/fonts/Lato/Lato-Italic.ttf);
+}
+@font-face {
+    font-family: Lato-Light;
+    src: url(../fonts/fonts/Lato/Lato-Light.ttf);
+}
+@font-face {
+    font-family: Lato-Black;
+    src: url(../fonts/fonts/Lato/Lato-Black.ttf);
+}
+
+
+// Variables
+:root{
+
+}
+
+// Inherit
+body{
+    font-family: Lato-Regular;
+    
+}
+html{
+    font-size: 62.5%;
+}
+// HEADER
+
+// MENU
+.navbar-light {
+    & .navbar-nav{
+        & .nav-link{
+            color : #444;
+            font-size: 1.4rem;
+            &:hover{
+                color: #fff;
+                background-color: #1bbc9b;
+            }
+
+        }
+    } 
+    
+}
+// MAIN
+
